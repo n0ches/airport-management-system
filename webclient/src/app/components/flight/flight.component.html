@@ -1,0 +1,140 @@
+<dx-data-grid id="gridContainer" class="grid"
+    #dataGrid
+    [dataSource]="flightDataSource"
+    [rowAlternationEnabled]="true"
+    (onRowDblClick)="updateRow($event)"
+    (onEditorPreparing)="onEditorPreparing($event)"
+    [showBorders]="true">
+ 
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    
+    <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25, 50]"></dxo-pager>
+
+    <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+
+    <dxo-editing mode="popup" [allowAdding]="true">
+        <dxo-popup #addingPopup [width]="700" [closeOnOutsideClick]="true" ></dxo-popup>
+        
+        <dxo-form labelLocation="top">
+            <dxi-item dataField="source.id" [editorOptions]="{stylingMode:'underlined'}"></dxi-item>
+            <dxi-item dataField="destination.id" [editorOptions]="{stylingMode:'underlined'}"></dxi-item>
+            <dxi-item dataField="departureTime" editorType="dxDateBox" [editorOptions]="{stylingMode:'underlined'}"></dxi-item> 
+            <dxi-item dataField="arrivalTime" editorType="dxDateBox" [editorOptions]="{stylingMode:'underlined'}"></dxi-item>
+            <dxi-item dataField="plane.code" [editorOptions]="{stylingMode:'underlined'}"></dxi-item>
+        </dxo-form>
+    </dxo-editing>
+    
+    <dxi-column caption="Source Airport" dataField="source.id" editCellTemplate="sourceAirportBoxTemplate">
+        <dxo-lookup [dataSource]="airports" displayExpr="name" valueExpr="id"></dxo-lookup>
+    </dxi-column>
+    <dxi-column caption="Destination Airport" dataField="destination.id" editCellTemplate="destinationAirportBoxTemplate">
+        <dxo-lookup [dataSource]="airports" displayExpr="name" valueExpr="id"></dxo-lookup>
+    </dxi-column>
+    <dxi-column dataField="departureTime" ></dxi-column>
+    <dxi-column dataField="arrivalTime"></dxi-column>
+    <dxi-column caption="Plane Code" dataField="plane.code" editCellTemplate="planeBoxTemplate">
+        <dxo-lookup [dataSource]="planes" displayExpr="code" valueExpr="code"></dxo-lookup>
+    </dxi-column>
+    <dxi-column caption="Delete" [width]="60" type="buttons" cellTemplate="deleteCellTemplate"></dxi-column>
+
+
+    <div *dxTemplate = "let data of 'deleteCellTemplate'">
+        <dx-button
+        icon="trash"
+        stylingMode="text"   
+        type="danger"         
+        (onClick)="showDeletePopup($event,data)"></dx-button>
+    </div>
+
+    <div *dxTemplate="let cellData of 'sourceAirportBoxTemplate'">
+        <dx-drop-down-box
+                stylingMode="underlined"
+                #sourceAirportDropDownBox
+                (onValueChanged)="dropDownValueChanged($event, cellData.setValue)"
+                [value]="cellData.value"
+                valueExpr="id"
+                [deferRendering]="false"
+                [displayExpr]="displayExpr"
+                placeholder="Select a value..."
+                [showClearButton]="true"
+                [dataSource]="airports">
+            <div *dxTemplate="let data of 'content'">
+                <dx-data-grid
+                        keyExpr="id"
+                        [dataSource]="airports"
+                        [columns]="['name']"
+                        [selection]="{ mode: 'single' }"
+                        [hoverStateEnabled]="true"
+                        [paging]="{ enabled: true, pageSize: 10 }"
+                        [filterRow]="{ visible: true }"
+                        [scrolling]="{ mode: 'infinite' }"
+                        [selectedRowKeys]="[cellData.value]"
+                        (onSelectionChanged)="dropDownSelectionChanged($event, sourceAirportDropDownBox.instance)"
+                        height="100%">
+                </dx-data-grid>
+            </div>
+        </dx-drop-down-box>
+    </div>
+
+    <div *dxTemplate="let cellData of 'destinationAirportBoxTemplate'">
+        <dx-drop-down-box
+                stylingMode="underlined"
+                #destinationAirportDropDownBox
+                (onValueChanged)="dropDownValueChanged($event, cellData.setValue)"
+                [value]="cellData.value"
+                valueExpr="id"
+                [deferRendering]="false"
+                [displayExpr]="displayExpr"
+                placeholder="Select a value..."
+                [showClearButton]="true"
+                [dataSource]="airports">
+            <div *dxTemplate="let data of 'content'">
+                <dx-data-grid
+                        keyExpr="id"
+                        [dataSource]="airports"
+                        [columns]="['name']"
+                        [selection]="{ mode: 'single' }"
+                        [hoverStateEnabled]="true"
+                        [paging]="{ enabled: true, pageSize: 10 }"
+                        [filterRow]="{ visible: true }"
+                        [scrolling]="{ mode: 'infinite' }"
+                        [selectedRowKeys]="[cellData.value]"
+                        (onSelectionChanged)="dropDownSelectionChanged($event, destinationAirportDropDownBox.instance)"
+                        height="100%">
+                </dx-data-grid>
+            </div>
+        </dx-drop-down-box>
+    </div>
+
+    <div *dxTemplate="let cellData of 'planeBoxTemplate'">
+        <dx-drop-down-box
+                stylingMode="underlined"
+                #planeDropDownBox
+                (onValueChanged)="dropDownValueChanged($event, cellData.setValue)"
+                [value]="cellData.value"
+                valueExpr="code"
+                [deferRendering]="false"
+                [displayExpr]="displayExprPlane"
+                placeholder="Select a value..."
+                [showClearButton]="true"
+                [dataSource]="planes">
+            <div *dxTemplate="let data of 'content'">
+                <dx-data-grid
+                        keyExpr="code"
+                        [dataSource]="planes"
+                        [columns]="['code']"
+                        [selection]="{ mode: 'single' }"
+                        [hoverStateEnabled]="true"
+                        [paging]="{ enabled: true, pageSize: 10 }"
+                        [filterRow]="{ visible: true }"
+                        [scrolling]="{ mode: 'infinite' }"
+                        [selectedRowKeys]="[cellData.value]"
+                        (onSelectionChanged)="dropDownSelectionChanged($event, planeDropDownBox.instance)"
+                        height="100%">
+                </dx-data-grid>
+            </div>
+        </dx-drop-down-box>
+    </div>
+</dx-data-grid>

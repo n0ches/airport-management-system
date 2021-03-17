@@ -1,0 +1,42 @@
+<dx-data-grid id="gridContainer" class="grid" #dataGrid [dataSource]="seats" (onRowDblClick)="buyTicket($event)"
+    [rowAlternationEnabled]="true" [showBorders]="true">
+
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+
+    <dxo-paging [pageSize]="10"></dxo-paging>
+
+    <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[10, 25, 50]"></dxo-pager>
+
+    <dxo-search-panel [visible]="true" [highlightCaseSensitive]="true"></dxo-search-panel>
+
+
+    <dxi-column caption="Availability" dataField="status" cellTemplate="statusCellTemplate"></dxi-column>
+    <dxi-column caption="Seat Number" dataField="id"></dxi-column>
+    <dxi-column caption="Passenger" dataField="passenger.name"></dxi-column>
+    <dxi-column dataField="price"></dxi-column>
+
+
+    <div *dxTemplate="let alarm of 'statusCellTemplate'">
+        <dx-button [width]="25" [height]="25" icon="fa fa-bell" stylingMode="text"
+            [type]="alarm.row.data.status ? 'success' : 'danger'"></dx-button>
+    </div>
+
+
+</dx-data-grid>
+<dx-popup [width]="500" [height]="400"  [showTitle]="true" title="Buy Ticket" [dragEnabled]="false"
+    [closeOnOutsideClick]="true" [(visible)]="popupVisible" [toolbarItems]=toolbarItemOptions>
+    
+    <dx-form [(formData)]="passenger" [colCount]="2">
+        <dxi-item dataField="name" [editorOptions]="{ stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="surname" [editorOptions]="{ stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="phone" [editorOptions]="{ stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="birthday" editorType="dxDateBox" [editorOptions]="{stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="gender" editorType="dxSelectBox"
+        [editorOptions]="{ items: genders, searchEnabled: true, value: '', stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="weight" [editorOptions]="{ stylingMode:'underlined'}"></dxi-item>
+        <dxi-item dataField="height" [editorOptions]="{ stylingMode:'underlined'}"></dxi-item>
+    </dx-form>
+    <div style="padding-top: 50px; padding-left: 100px;">
+        <span>Are you sure to buy this Seat?</span>
+    </div>
+</dx-popup>

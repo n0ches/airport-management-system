@@ -1,0 +1,1187 @@
+{
+  "Pilots": [
+    {
+      "id": 1,
+      "name": "Idrishan",
+      "surname": "Parlayan",
+      "phone": 123456,
+      "birthday": "1999-8-31",
+      "gender": "male",
+      "weight": 80.2,
+      "height": 183,
+      "flightHistory": [],
+      "rank": "first-pilot",
+      "flightCompany":
+	{
+	      "id": 1,
+	      "name": "THY",
+	      "address": {
+		"city": "Izmir",
+		"country": "Turkey",
+		"town": "Alsancak"
+	      },
+	      "phone": 123123123,
+	      "planes": [],
+	      "pilots": [],
+	      "hosts": []
+    	},
+      "workExperience": 23,
+      "salary": 30000,
+      "nextFlights": []
+    },
+    {
+      "id": 2,
+      "name": "Rıdvan",
+      "surname": "Özdemir",
+      "phone": 12312313,
+      "birthday": "1998-7-24",
+      "gender": "male",
+      "weight": 73,
+      "height": 185,
+      "rank": "First Pilot",
+      "flightCompany": 
+    {
+	      "id": 2,
+	      "name": "Fly Emirates",
+	      "address": {
+		"city": "Dubai",
+		"country": "UAE",
+		"town": "Jebel Ali"
+	      },
+	      "phone": 123123123,
+	      "planes": [],
+	      "pilots": [],
+	      "hosts": []
+    },
+      "workExperience": 12,
+      "salary": 30000
+    }
+  ],
+  "Hosts": [
+    {
+      "id": 1,
+      "name": "Alp Ercan",
+      "surname": "Gultekin",
+      "phone": 34543534,
+      "birthday": "1999-1-1",
+      "gender": "male",
+      "weight": 70,
+      "height": 170,
+      "flightHistory": [],
+      "flightCompany": 
+	    {
+	      "id": 1,
+	      "name": "THY",
+	      "address": {
+		"city": "Izmir",
+		"country": "Turkey",
+		"town": "Alsancak"
+	      },
+	      "phone": 123123123,
+	      "planes": [],
+	      "pilots": [],
+	      "hosts": []
+	    },
+      "workExperience": 23,
+      "salary": 30000,
+      "nextFlights": []
+    }
+  ],
+  "Passenger": [
+    {
+      "id": 1,
+      "name": "Rıdvan",
+      "surname": "Ozdemir",
+      "phone": 4353453,
+      "birthday": "1998-7-24",
+      "gender": "male",
+      "weight": 75.7,
+      "height": 184,
+      "flightHistory": [],
+      "bagId": 1,
+      "bagWeight": 10
+    }
+  ],
+  "Plane": [
+    {
+      "code": "TR-45",
+      "baggageCapacity": 3500,
+      "seatNumber": 30,
+      "flightHistory": [],
+      "nextFlights": [],
+      "flightCompany": {},
+      "seats": 
+	[
+	    {
+	      "id": 1,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 2,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 3,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 4,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 5,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 6,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 7,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 8,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 9,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 10,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 11,
+	      "status": true,
+	      "passenger": null
+	    },    {
+	      "id": 12,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 13,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 14,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 15,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 16,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 17,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 18,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 19,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 20,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 21,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 22,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 23,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 24,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 25,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 26,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 27,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 28,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 29,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 30,
+	      "status": false,
+	      "passenger": null
+	    }
+	]
+    },
+    {
+      "code": "TR-16",
+      "baggageCapacity": 3500,
+      "seatNumber": 26,
+      "flightHistory": [],
+      "nextFlights": [],
+      "flightCompany": {},
+      "seats": 
+	[
+	    {
+	      "id": 31,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 32,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 33,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 34,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 35,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 36,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 37,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 38,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 39,
+	      "status": true,
+	      "passenger": null
+	    },    {
+	      "id": 40,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 41,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 42,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 43,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 44,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 45,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 46,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 47,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 48,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 49,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 50,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 51,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 52,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 53,
+	      "status": false,
+	      "passenger": null
+	    },
+	    {
+	      "id": 54,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 55,
+	      "status": true,
+	      "passenger": null
+	    },
+	    {
+	      "id": 56,
+	      "status": true,
+	      "passenger": null
+	    }
+	]
+    }
+  ],
+  "FlightCompany": [
+    {
+      "id": 1,
+      "name": "THY",
+      "address": {
+        "city": "Izmir",
+        "country": "Turkey",
+        "town": "Alsancak"
+      },
+      "phone": 123123123,
+      "planes": [],
+      "pilots": [],
+      "hosts": []
+    },
+    {
+      "id": 2,
+      "name": "Fly Emirates",
+      "address": {
+        "city": "Dubai",
+        "country": "UAE",
+        "town": "Jebel Ali"
+      },
+      "phone": 123123123,
+      "planes": [],
+      "pilots": [],
+      "hosts": []
+    }
+  ],
+  "Airport": [
+    {
+      "id": 1,
+      "name": "Adnan Menderes Airport",
+      "address": {
+        "town": "Dokuz Eylul, 35410 Gaziemir",
+        "city": "Izmir",
+        "country": "Turkey"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sabiha Gokcen Airport",
+      "address": {
+        "town": "Sanayi, 34906 Pendik",
+        "city": "Istanbul",
+        "country": "Turkey"
+      }
+    }
+  ],
+  "Flight": [
+    {
+      "id": 1,
+      "source": 
+	{
+            "id": 1,
+            "name": "Adnan Menderes Airport"
+	},
+      "destination": 
+	{
+	   "id": 2,
+           "name": "Sabiha Gokcen Airport"
+	},
+      "departureTime": "2020-10-25",
+      "arrivalTime": "2020-10-25",
+      "plane": 
+	{
+		"code": "TR-45",
+      		"baggageCapacity": 3500,
+      		"seatNumber": 30,
+      		"flightHistory": [],
+      		"nextFlights": [],
+      		"flightCompany": {},
+      		"seats": 
+			[
+			    {
+			      "id": 1,
+			      "status": true,
+			      "passenger": null,
+			      "price": 101
+			    },
+			    {
+			      "id": 2,
+			      "status": false,
+			      "passenger": null,
+			      "price": 102
+			    },
+			    {
+			      "id": 3,
+			      "status": false,
+			      "passenger": null,
+			      "price": 103
+			    },
+			    {
+			      "id": 4,
+			      "status": true,
+			      "passenger": null,
+			      "price": 104
+			    },
+			    {
+			      "id": 5,
+			      "status": true,
+			      "passenger": null,
+			      "price": 105
+			    },
+			    {
+			      "id": 6,
+			      "status": true,
+			      "passenger": null,
+			      "price": 106
+			    },
+			    {
+			      "id": 7,
+			      "status": true,
+			      "passenger": null,
+			      "price": 107
+			    },
+			    {
+			      "id": 8,
+			      "status": false,
+			      "passenger": null,
+			      "price": 108
+			    },
+			    {
+			      "id": 9,
+			      "status": true,
+			      "passenger": null,
+			      "price": 109
+			    },
+			    {
+			      "id": 10,
+			      "status": false,
+			      "passenger": null,
+			      "price": 110
+			    },
+			    {
+			      "id": 11,
+			      "status": true,
+			      "passenger": null,
+			      "price": 111
+			    },    {
+			      "id": 12,
+			      "status": true,
+			      "passenger": null,
+			      "price": 112
+			    },
+			    {
+			      "id": 13,
+			      "status": true,
+			      "passenger": null,
+			      "price": 113
+			    },
+			    {
+			      "id": 14,
+			      "status": true,
+			      "passenger": null,
+			      "price": 114
+			    },
+			    {
+			      "id": 15,
+			      "status": true,
+			      "passenger": null,
+			      "price": 115
+			    },
+			    {
+			      "id": 16,
+			      "status": false,
+			      "passenger": null,
+			      "price": 116
+			    },
+			    {
+			      "id": 17,
+			      "status": false,
+			      "passenger": null,
+			      "price": 117
+			    },
+			    {
+			      "id": 18,
+			      "status": true,
+			      "passenger": null,
+			      "price": 118
+			    },
+			    {
+			      "id": 19,
+			      "status": true,
+			      "passenger": null,
+			      "price": 119
+			    },
+			    {
+			      "id": 20,
+			      "status": true,
+			      "passenger": null,
+			      "price": 120
+			    },
+			    {
+			      "id": 21,
+			      "status": false,
+			      "passenger": null,
+			      "price": 121
+			    },
+			    {
+			      "id": 22,
+			      "status": true,
+			      "passenger": null,
+			      "price": 122
+			    },
+			    {
+			      "id": 23,
+			      "status": true,
+			      "passenger": null,
+			      "price": 123
+			    },
+			    {
+			      "id": 24,
+			      "status": true,
+			      "passenger": null,
+			      "price": 124
+			    },
+			    {
+			      "id": 25,
+			      "status": false,
+			      "passenger": null,
+			      "price": 125
+			    },
+			    {
+			      "id": 26,
+			      "status": true,
+			      "passenger": null,
+			      "price": 126
+			    },
+			    {
+			      "id": 27,
+			      "status": true,
+			      "passenger": null,
+			      "price": 127
+			    },
+			    {
+			      "id": 28,
+			      "status": true,
+			      "passenger": null,
+			      "price": 128
+			    },
+			    {
+			      "id": 29,
+			      "status": true,
+			      "passenger": null,
+			      "price": 129
+			    },
+			    {
+			      "id": 30,
+			      "status": false,
+			      "passenger": null,
+			      "price": 130
+			    }
+			]
+	},
+      "pilots": [],
+      "hosts": [],
+      "passenger": []
+    },
+    {
+      "id": 2,
+      "source": 
+	{
+	   "id": 2,
+           "name": "Sabiha Gokcen Airport"
+	},
+      "destination": 
+	{
+            "id": 1,
+            "name": "Adnan Menderes Airport"
+	},
+      "departureTime": "2020-6-1",
+      "arrivalTime": "2020-6-1",
+      "plane": 
+	{
+		"code": "TR-16",
+      		"baggageCapacity": 3500,
+      		"seatNumber": 26,
+      		"flightHistory": [],
+      		"nextFlights": [],
+      		"flightCompany": {},
+      		"seats": 
+			[
+			    {
+			      "id": 31,
+			      "status": false,
+			      "passenger": null,
+			      "price": 131
+			    },
+			    {
+			      "id": 32,
+			      "status": true,
+			      "passenger": null,
+			      "price": 132
+			    },
+			    {
+			      "id": 33,
+			      "status": true,
+			      "passenger": null,
+			      "price": 133
+			    },
+			    {
+			      "id": 34,
+			      "status": true,
+			      "passenger": null,
+			      "price": 134
+			    },
+			    {
+			      "id": 35,
+			      "status": true,
+			      "passenger": null,
+			      "price": 135
+			    },
+			    {
+			      "id": 36,
+			      "status": false,
+			      "passenger": null,
+			      "price": 136
+			    },
+			    {
+			      "id": 37,
+			      "status": true,
+			      "passenger": null,
+			      "price": 137
+			    },
+			    {
+			      "id": 38,
+			      "status": false,
+			      "passenger": null,
+			      "price": 138
+			    },
+			    {
+			      "id": 39,
+			      "status": true,
+			      "passenger": null,
+			      "price": 139
+			    },    {
+			      "id": 40,
+			      "status": true,
+			      "passenger": null,
+			      "price": 140
+			    },
+			    {
+			      "id": 41,
+			      "status": true,
+			      "passenger": null,
+			      "price": 141
+			    },
+			    {
+			      "id": 42,
+			      "status": true,
+			      "passenger": null,
+			      "price": 142
+			    },
+			    {
+			      "id": 43,
+			      "status": true,
+			      "passenger": null,
+			      "price": 143
+			    },
+			    {
+			      "id": 44,
+			      "status": false,
+			      "passenger": null,
+			      "price": 144
+			    },
+			    {
+			      "id": 45,
+			      "status": false,
+			      "passenger": null,
+			      "price": 145
+			    },
+			    {
+			      "id": 46,
+			      "status": true,
+			      "passenger": null,
+			      "price": 146
+			    },
+			    {
+			      "id": 47,
+			      "status": true,
+			      "passenger": null,
+			      "price": 147
+			    },
+			    {
+			      "id": 48,
+			      "status": true,
+			      "passenger": null,
+			      "price": 148
+			    },
+			    {
+			      "id": 49,
+			      "status": false,
+			      "passenger": null,
+			      "price": 149
+			    },
+			    {
+			      "id": 50,
+			      "status": true,
+			      "passenger": null,
+			      "price": 150
+			    },
+			    {
+			      "id": 51,
+			      "status": true,
+			      "passenger": null,
+			      "price": 151
+			    },
+			    {
+			      "id": 52,
+			      "status": true,
+			      "passenger": null,
+			      "price": 152
+			    },
+			    {
+			      "id": 53,
+			      "status": false,
+			      "passenger": null,
+			      "price": 153
+			    },
+			    {
+			      "id": 54,
+			      "status": true,
+			      "passenger": null,
+			      "price": 154
+			    },
+			    {
+			      "id": 55,
+			      "status": true,
+			      "passenger": null,
+			      "price": 155
+			    },
+			    {
+			      "id": 56,
+			      "status": true,
+			      "passenger": null,
+			      "price": 156
+			    }
+			]
+	},
+      "pilots": [],
+      "hosts": [],
+      "passenger": []
+    }
+  ],
+  "Seat": [
+    {
+      "id": 1,
+      "status": true,
+      "passenger": null,
+      "price": 101
+    },
+    {
+      "id": 2,
+      "status": false,
+      "passenger": null,
+      "price": 102
+    },
+    {
+      "id": 3,
+      "status": false,
+      "passenger": null,
+      "price": 103
+    },
+    {
+      "id": 4,
+      "status": true,
+      "passenger": null,
+      "price": 104
+    },
+    {
+      "id": 5,
+      "status": true,
+      "passenger": null,
+      "price": 105
+    },
+    {
+      "id": 6,
+      "status": true,
+      "passenger": null,
+      "price": 106
+    },
+    {
+      "id": 7,
+      "status": true,
+      "passenger": null,
+      "price": 107
+    },
+    {
+      "id": 8,
+      "status": false,
+      "passenger": null,
+      "price": 108
+    },
+    {
+      "id": 9,
+      "status": true,
+      "passenger": null,
+      "price": 109
+    },
+    {
+      "id": 10,
+      "status": false,
+      "passenger": null,
+      "price": 110
+    },
+    {
+      "id": 11,
+      "status": true,
+      "passenger": null,
+      "price": 111
+    },    {
+      "id": 12,
+      "status": true,
+      "passenger": null,
+      "price": 112
+    },
+    {
+      "id": 13,
+      "status": true,
+      "passenger": null,
+      "price": 113
+    },
+    {
+      "id": 14,
+      "status": true,
+      "passenger": null,
+      "price": 114
+    },
+    {
+      "id": 15,
+      "status": true,
+      "passenger": null,
+      "price": 115
+    },
+    {
+      "id": 16,
+      "status": false,
+      "passenger": null,
+      "price": 116
+    },
+    {
+      "id": 17,
+      "status": false,
+      "passenger": null,
+      "price": 117
+    },
+    {
+      "id": 18,
+      "status": true,
+      "passenger": null,
+      "price": 118
+    },
+    {
+      "id": 19,
+      "status": true,
+      "passenger": null,
+      "price": 119
+    },
+    {
+      "id": 20,
+      "status": true,
+      "passenger": null,
+      "price": 120
+    },
+    {
+      "id": 21,
+      "status": false,
+      "passenger": null,
+      "price": 121
+    },
+    {
+      "id": 22,
+      "status": true,
+      "passenger": null,
+      "price": 122
+    },
+    {
+      "id": 23,
+      "status": true,
+      "passenger": null,
+      "price": 123
+    },
+    {
+      "id": 24,
+      "status": true,
+      "passenger": null,
+      "price": 124
+    },
+    {
+      "id": 25,
+      "status": false,
+      "passenger": null,
+      "price": 125
+    },
+    {
+      "id": 26,
+      "status": true,
+      "passenger": null,
+      "price": 126
+    },
+    {
+      "id": 27,
+      "status": true,
+      "passenger": null,
+      "price": 127
+    },
+    {
+      "id": 28,
+      "status": true,
+      "passenger": null,
+      "price": 128
+    },
+    {
+      "id": 29,
+      "status": true,
+      "passenger": null,
+      "price": 129
+    },
+    {
+      "id": 30,
+      "status": false,
+      "passenger": null,
+      "price": 130
+    },
+    {
+      "id": 31,
+      "status": false,
+      "passenger": null,
+      "price": 131
+    },
+    {
+      "id": 32,
+      "status": true,
+      "passenger": null,
+      "price": 132
+    },
+    {
+      "id": 33,
+      "status": true,
+      "passenger": null,
+      "price": 133
+    },
+    {
+      "id": 34,
+      "status": true,
+      "passenger": null,
+      "price": 134
+    },
+    {
+      "id": 35,
+      "status": true,
+      "passenger": null,
+      "price": 135
+    },
+    {
+      "id": 36,
+      "status": false,
+      "passenger": null,
+      "price": 136
+    },
+    {
+      "id": 37,
+      "status": true,
+      "passenger": null,
+      "price": 137
+    },
+    {
+      "id": 38,
+      "status": false,
+      "passenger": null,
+      "price": 138
+    },
+    {
+      "id": 39,
+      "status": true,
+      "passenger": null,
+      "price": 139
+    },    {
+      "id": 40,
+      "status": true,
+      "passenger": null,
+      "price": 140
+    },
+    {
+      "id": 41,
+      "status": true,
+      "passenger": null,
+      "price": 141
+    },
+    {
+      "id": 42,
+      "status": true,
+      "passenger": null,
+      "price": 142
+    },
+    {
+      "id": 43,
+      "status": true,
+      "passenger": null,
+      "price": 143
+    },
+    {
+      "id": 44,
+      "status": false,
+      "passenger": null,
+      "price": 144
+    },
+    {
+      "id": 45,
+      "status": false,
+      "passenger": null,
+      "price": 145
+    },
+    {
+      "id": 46,
+      "status": true,
+      "passenger": null,
+      "price": 146
+    },
+    {
+      "id": 47,
+      "status": true,
+      "passenger": null,
+      "price": 147
+    },
+    {
+      "id": 48,
+      "status": true,
+      "passenger": null,
+      "price": 148
+    },
+    {
+      "id": 49,
+      "status": false,
+      "passenger": null,
+      "price": 149
+    },
+    {
+      "id": 50,
+      "status": true,
+      "passenger": null,
+      "price": 150
+    },
+    {
+      "id": 51,
+      "status": true,
+      "passenger": null,
+      "price": 151
+    },
+    {
+      "id": 52,
+      "status": true,
+      "passenger": null,
+      "price": 152
+    },
+    {
+      "id": 53,
+      "status": false,
+      "passenger": null,
+      "price": 153
+    },
+    {
+      "id": 54,
+      "status": true,
+      "passenger": null,
+      "price": 154
+    },
+    {
+      "id": 55,
+      "status": true,
+      "passenger": null,
+      "price": 155
+    },
+    {
+      "id": 56,
+      "status": true,
+      "passenger": null,
+      "price": 156
+    }
+  ]
+}

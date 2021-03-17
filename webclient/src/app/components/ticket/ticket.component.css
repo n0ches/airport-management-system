@@ -1,0 +1,26 @@
+::ng-deep .dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+::ng-deep .send .dx-button-content .dx-icon {
+    font-size: 18px;
+    align-items: center;
+}
+
+::ng-deep .grid{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+::ng-deep .dropDown{
+    margin-left: 100px;
+
+}
+
+::ng-deep .dx-datagrid-action {
+    text-align-last: center;
+    vertical-align: middle !important;
+}
+
